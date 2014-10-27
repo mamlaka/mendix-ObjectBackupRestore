@@ -49,6 +49,7 @@ import com.mendix.systemwideinterfaces.core.meta.IMetaAssociation.AssociationOwn
 import com.mendix.systemwideinterfaces.core.meta.IMetaAssociation.AssociationType;
 import com.mendix.systemwideinterfaces.core.meta.IMetaObject;
 import com.mendix.systemwideinterfaces.core.meta.IMetaPrimitive;
+import com.mendix.systemwideinterfaces.core.meta.IMetaPrimitive.PrimitiveType;
 
 /**
  * @author marcel
@@ -290,7 +291,10 @@ public class BackupObjectImpl {
 			String attributeName = primitive.getName();
 			boolean includeAttribute = true;
 			
-			if (attributeName.equals(keyAttributeName)) {
+			if (primitive.getType().equals(PrimitiveType.AutoNumber)) {
+				// Can't restore AutoNumber value anyway so skip it.
+				includeAttribute = false;
+			} else if (attributeName.equals(keyAttributeName)) {
 				// Key attribute is already included.
 				includeAttribute = false;
 			} else if (isImage && imageAttributeToIgnoreSet.contains(attributeName)) {
