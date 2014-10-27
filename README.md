@@ -11,7 +11,7 @@ Create a backup of one or more Mendix objects, including referenced objects and 
 - Please note that the ObjectBackupRestore module is ***not*** intended to replace a full database or cloud backup plan.
 - The functionality is provided without official support.
 - Support is provided through Git issues or the Mendix forum on best-effort basis only.
-- We do not accept responsibility for loss or corruption of data.
+- We do not accept responsibility for loss or corruption of data or any resulting damage.
 - Use at your own risk.
 
 **By using this module you agree to be bound by this disclaimer.**  
