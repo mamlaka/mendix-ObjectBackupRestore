@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="ObjectBackupRestoreAdditionalStyling.widget.ObjectBackupRestoreAdditionalStyling" needsEntityContext="false" xmlns="http://www.mendix.com/widget/1.0/">
+  <name>ObjectBackupRestoreAdditionalStyling</name>
+  <description>ObjectBackupRestore additional styling. This widget provides additional styling because a module export will not include CSS.</description>
+
+    <icon>
+iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAAsTAAALEwEAmpwY
+AAABgUlEQVR4nNWSS0sCYRSG5xuzGq2orKDAorZWUNBtEW4K+gW1bBX0J9rZtp8QFXaDauHC
+VtKuQiO1BEUtGiZ1vAXOmOM303dOC7XL1k30rM7ifXh54RBE5JqFb9r8U7nl66oyuE6p1Sod
+7O5w2NpbTbyk6mG51GsVZgYEc4vpPvcuK9pwt8VhEwgh383PJbp+7G8vStNdkJRkly+mfcDm
+RXC8tZJ4zUfEzE2msncVmrTo54EnSmm9EBERYe1S8gXCWAdEuaAZH3OHUX9KAQCq64G0snQW
+l1VqGAZjrJbjEBEQHPtROSvjb8JSwemOuG4zBmMIcBoUZ9xRT6IIjUC9efni5SaZ/tKqBgNA
+QFQr7xvexO6dyAAQ8SVXXDyJx1L5Wqy2mWxNdW6HynKZchxKZbrje3jT9KPHrFUQnKN9WjHn
+E5VoThnu75noNWtKqTaZND4Mk6m8N57tNBMzwvyIbcw+dHAdA0SeVlYXHCojnvsEcJy9DVZm
+J3me/JSb4Z++5yc2qRfyt/VqtQAAAABJRU5ErkJggg==
+    </icon>
+    <properties>
+        <property key="dummy" type="string" required="false">
+            <caption>dummy</caption>
+            <category>Common</category>
+            <description>Not used.</description>
+        </property>
+    </properties>
+    
+</widget>
+

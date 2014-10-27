@@ -18,7 +18,7 @@ Create a backup of one or more Mendix objects, including referenced objects and 
 
 ##Typical usage scenario
 - Restore objects of one organization in a multi-tenant environment.
-- Duplicate a part of the data to another environment.
+- Duplicate a part of the data to another environment. (Note that you can also duplicate backup configurations this way.)
 
 ###Multi-tenant environment
 When one customer organization in a multi-tenant environment request a restore of their data, the daily backup cannot be used as that would affect all customers in the node.
@@ -66,6 +66,9 @@ Link the pages in the UseMe folder to your navigation. Include the Admin module 
 
 ##Configuration
 
+###Reflection
+Any module that contains entities or associations must be synchronized in Reflection. That includes System, Administration or even MxModelReflection itself if your entities reference entities in those modules.
+
 ###Backup group
 A backup group allows backup configurations to be grouped.
 
@@ -78,6 +81,10 @@ By clicking on an association, its details are displayed. The key of the referen
 
 ####Include in backup: Yes
 The referenced objects are also included in the backup. The association is expanded to show the next level. When there are multiple paths to an object, it is sufficient to expand the reference in one place. The backup and restore detect that the same object is referenced. An example is a multi-tenant model, where all entities are related to the customer organization entity.
+
+**Do not include entites of System or Administration in your backups!** Just specify the functional key on the object type and the restore process will link your data to these entities.
+
+(You can use the module to duplicate backup configurations.)
 
 ####Include in backup: No
 The object only holds the ID and, optionally, the functional key of the referenced object.

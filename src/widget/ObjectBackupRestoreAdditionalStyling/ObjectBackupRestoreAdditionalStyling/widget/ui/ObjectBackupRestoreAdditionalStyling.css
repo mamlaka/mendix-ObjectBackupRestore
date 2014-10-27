@@ -1,0 +1,16 @@
+/**
+ * Copyright 2014 - Synobsys
+ *
+ * Author: M. Groeneweg
+ * Description: Custom styling for the ObjectBackupRestore module
+ */
+
+/* ObjectBackupRestore */
+.IncludeInBackup-Unknown {
+	color: red;
+	font-weight: bold;
+}
+
+.IncludeInBackup-Yes {
+	font-weight: bold;
+}

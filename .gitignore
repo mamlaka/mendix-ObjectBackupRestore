@@ -1,0 +1,16 @@
+src/project/deployment/
+src/project/.classpath
+src/project/.project
+src/project/.settings
+*.launch
+*.tmp
+*.lock
+*.mpr.bak
+.idea/
+src/project/javasource/administration/
+src/project/javasource/com/
+src/project/javasource/system/
+src/project/javasource/communitycommons/
+src/project/javasource/mxmodelreflection/
+src/project/resources/communitycommons/
+src/project/userlib
